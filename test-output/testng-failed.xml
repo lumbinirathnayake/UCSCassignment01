@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods">
+  <test thread-count="2" name="Test(failed)" parallel="methods">
+    <parameter name="Username" value="John Doe"/>
+    <parameter name="Browser" value="chrome"/>
+    <parameter name="Password" value="ThisIsNotAPassword"/>
+    <classes>
+      <class name="testPackage.TestRunner">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="testCase02" invocation-numbers="0"/>
+          <include name="beforeClass"/>
+          <include name="afterSuite"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+          <include name="testCase01" invocation-numbers="0"/>
+          <include name="beforeSuite"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- testPackage.TestRunner -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
